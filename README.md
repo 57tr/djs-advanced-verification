@@ -22,14 +22,13 @@ npm i mongoose captcha-canvas
 > To connect to mongodb with your discord bot make sure to add this to your ready.js event or index.js file.
 ```js
 // Add this to the top of the file
-const { connect } = require('mongoose')
-const chalk = require("chalk")
+const { connect } = require('mongoose');
 
 // Add this to your ready.js or index.js file
 await connect(MONGO_URI).then(() => {
-    console.log(chalk.yellow(`Successfully connected to MongoDB!`));
-}).catch((err) => {
-    console.log(err);
+    console.log(`Successfully connected to MongoDB!`);
+}).catch((error) => {
+    console.log(`Error connecting to MongoDB!`, error);
 });
 ```
 
