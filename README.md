@@ -23,7 +23,7 @@ npm i mongoose captcha-canvas
 // Add this to the top of the file
 const { connect } = require('mongoose')
 const chalk = require("chalk")
-    
+
 // Add this to your ready.js or index.js file
 await connect(MONGO_URI).then(() => {
     console.log(chalk.yellow(`Successfully connected to MongoDB!`));
@@ -34,7 +34,6 @@ await connect(MONGO_URI).then(() => {
 
 # Preview
 https://user-images.githubusercontent.com/96021196/223345641-3dc03144-f2f1-46b1-ae12-60731af035b6.mp4
-
 
 # Contributing:
 > If you want to contribute create a fork of this project and when you are done editing it update the fork and create a pull request.
