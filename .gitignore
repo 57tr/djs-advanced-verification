@@ -3,7 +3,4 @@ package-lock.json
 package.json
 utils.js
 index.js
-events/client
-**/client
-**/interactionCreate.js
 slashcommands
