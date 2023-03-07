@@ -4,8 +4,8 @@ const {
     EmbedBuilder
 } = require("discord.js");
 
-const verifySchema = require("../../schemas/verifySchema");
-const codesSchema = require("../../schemas/codesSchema");
+const verifySchema = require("../schemas/verifySchema");
+const codesSchema = require("../schemas/codesSchema");
 
 module.exports = {
     name: "interactionCreate",
