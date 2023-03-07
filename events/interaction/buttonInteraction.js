@@ -65,12 +65,12 @@ module.exports = {
                     .setStyle(ButtonStyle.Success)
             ]);
 
-            /* if (interaction.member.id === interaction.guild.ownerId) {
+            if (interaction.member.id === interaction.guild.ownerId) {
                 return interaction.reply({
                     content: "<a:checkmark:1081679442595823686> You don't need to verify yourself because you are the owner of the server.",
                     ephemeral: true,
                 });
-            } else */ if (dataCode && dataCode.captchaCode === "verified") {
+            } else if (dataCode && dataCode.captchaCode === "verified") {
                 member.roles.add(dataVerify.roleId);
 
                 return interaction.reply({
