@@ -11,8 +11,8 @@ const {
     TextInputStyle
 } = require("discord.js");
 
-const verifySchema = require("../../schemas/verifySchema");
-const codesSchema = require("../../schemas/codesSchema");
+const verifySchema = require("../schemas/verifySchema");
+const codesSchema = require("../schemas/codesSchema");
 
 const { Captcha } = require("captcha-canvas");
 

@@ -4,3 +4,5 @@ package.json
 utils.js
 index.js
 slashcommands
+client
+interaction
