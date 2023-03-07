@@ -1,13 +1,7 @@
 const {
     Client,
     Interaction,
-    WebhookClient,
-    ActionRowBuilder,
-    ModalBuilder,
-    TextInputBuilder,
-    TextInputStyle,
-    ModalSubmitInteraction,
-    EmbedBuilder,
+    EmbedBuilder
 } = require("discord.js");
 
 const verifySchema = require("../../schemas/verifySchema");
