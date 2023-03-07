@@ -1,9 +1,0 @@
-node_modules
-package-lock.json
-package.json
-utils.js
-index.js
-slashcommands
-client
-interaction
-.gitignore
