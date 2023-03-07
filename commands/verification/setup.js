@@ -33,6 +33,10 @@ module.exports = {
      * @param {Client} client
      * @param {ChatInputCommandInteraction} interaction
      */
+    
+    /**
+     * ! Check the order of how you pass parameters in your slashcommand handler
+     */
     async execute(client, interaction) {
 
         const { options, guild } = interaction;
