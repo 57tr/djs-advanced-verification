@@ -3,7 +3,8 @@
 # djs-advanced-verification
 This is an advanced verification system with database for different guilds. You can put this to good use, avoiding bots and preventing raids.
 
-![Repo Stars](https://img.shields.io/github/stars/57tr/djs-advanced-verification?style=for-the-badge) ![Github Followers](https://img.shields.io/github/followers/57tr?style=for-the-badge)
+<a href="https://github.com/57tr/djs-advanced-verification"><img src= "https://img.shields.io/github/stars/57tr/djs-advanced-verification?style=for-the-badge"/></a>
+<a href="https://github.com/57tr"><img src="https://img.shields.io/github/followers/57tr?style=for-the-badge"/></a>
 
 ## Dependencies:
 > The dependencies used are [mongoose](https://www.npmjs.com/package/mongoose) and [captcha-canvas](https://www.npmjs.com/package/captcha-canvas).
@@ -21,14 +22,13 @@ npm i mongoose captcha-canvas
 > To connect to mongodb with your discord bot make sure to add this to your ready.js event or index.js file.
 ```js
 // Add this to the top of the file
-const { connect } = require('mongoose')
-const chalk = require("chalk")
+const { connect } = require("mongoose");
 
 // Add this to your ready.js or index.js file
 await connect(MONGO_URI).then(() => {
-    console.log(chalk.yellow(`Successfully connected to MongoDB!`));
-}).catch((err) => {
-    console.log(err);
+    console.log(`Successfully connected to MongoDB!`);
+}).catch((error) => {
+    console.log(`Error connecting to MongoDB!`, error);
 });
 ```
 
