@@ -3,7 +3,7 @@
 # djs-advanced-verification
 This is an advanced verification system with database for different guilds. You can put this to good use, avoiding bots and preventing raids.
 
-![Repo Stars](https://img.shields.io/github/stars/57tr/djs-advanced-verification?style=for-the-badge) ![Github Followers](https://img.shields.io/github/followers/57tr?style=for-the-badge)
+<a href="https://github.com/57tr/djs-advanced-verification" src= "https://img.shields.io/github/stars/57tr/djs-advanced-verification?style=for-the-badge"/a> <a href="https://github.com/57tr" src="https://img.shields.io/github/followers/57tr?style=for-the-badge"/a>
 
 ## Dependencies:
 > The dependencies used are [mongoose](https://www.npmjs.com/package/mongoose) and [captcha-canvas](https://www.npmjs.com/package/captcha-canvas).
