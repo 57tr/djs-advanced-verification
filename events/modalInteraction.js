@@ -15,6 +15,10 @@ module.exports = {
      * @param {Interaction} interaction 
      * @returns 
      */
+
+    /**
+     * ! Check the order of how you pass parameters in your event handler
+     */
     async execute(client, interaction) {
 
         if (!interaction.guild || !interaction.channel || !interaction.user || interaction.user.bot) return;
