@@ -26,7 +26,7 @@ module.exports = {
      */
 
     /**
-     * ! Check the order of how you pass parameters in your slashcommand handler
+     * ! Check the order of how you pass parameters in your event handler
      */
     async execute(client, interaction) {
 
