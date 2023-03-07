@@ -24,6 +24,10 @@ module.exports = {
      * @param {ButtonInteraction} interaction 
      * @returns 
      */
+
+    /**
+     * ! Check the order of how you pass parameters in your slashcommand handler
+     */
     async execute(client, interaction) {
 
         if (!interaction.guild || !interaction.channel || !interaction.user || interaction.user.bot) return;
