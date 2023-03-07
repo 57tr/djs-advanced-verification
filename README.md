@@ -3,9 +3,9 @@
 # djs-advanced-verification
 This is an advanced verification system with database for different guilds. You can put this to good use, avoiding bots and preventing raids.
 
-<p align="left"
-    <a href="https://github.com/57tr/djs-advanced-verification" src= "https://img.shields.io/github/stars/57tr/djs-advanced-verification?style=for-the-badge"/></a>
-    <a href="https://github.com/57tr" src="https://img.shields.io/github/followers/57tr?style=for-the-badge"/></a>
+<p align="left">
+    <a href="https://github.com/57tr/djs-advanced-verification"> <img src= "https://img.shields.io/github/stars/57tr/djs-advanced-verification?style=for-the-badge"/></a>
+    <a href="https://github.com/57tr"> <img src="https://img.shields.io/github/followers/57tr?style=for-the-badge"/></a>
 </p>
 
 ## Dependencies:
