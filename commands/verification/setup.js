@@ -8,7 +8,7 @@ const {
     ButtonStyle,
 } = require("discord.js");
 
-const verifySchema = require("../schemas/verifySchema");
+const verifySchema = require("../../schemas/verifySchema");
 
 module.exports = {
     data: new SlashCommandBuilder()

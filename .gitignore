@@ -3,7 +3,5 @@ package-lock.json
 package.json
 utils.js
 index.js
-slashcommands
+test
 client
-interaction
-.gitignore
