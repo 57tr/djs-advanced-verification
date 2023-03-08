@@ -30,9 +30,9 @@ module.exports = {
      */
     async execute(client, interaction) {
 
-        if (!interaction.guild || !interaction.channel || !interaction.user || interaction.user.bot) return;
-
         if (!interaction.isButton()) return;
+        
+        if (!interaction.guild || !interaction.channel || !interaction.user || interaction.user.bot) return;
 
         const { guild, member, customId } = interaction;
 
@@ -69,7 +69,7 @@ module.exports = {
                     .setStyle(ButtonStyle.Success)
             ]);
 
-            if (interaction.member.id === interaction.guild.ownerId) {
+            if (member.id === guild.ownerId) {
                 return interaction.reply({
                     content: "<a:checkmark:1081679442595823686> You don't need to verify yourself because you are the owner of the server.",
                     ephemeral: true,
@@ -83,7 +83,7 @@ module.exports = {
                 });
             } else if (!dataCode) {
                 await codesSchema.create({
-                    userId: interaction.member.id,
+                    userId: member.id,
                     captchaCode: `${captcha.text}`,
                 });
 
