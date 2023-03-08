@@ -59,13 +59,15 @@ module.exports = {
 
         const dataSaved = await verifySchema.findOne({ guildId: guild.id });
 
-        const row = new ActionRowBuilder().addComponents([
-            new ButtonBuilder()
-                .setCustomId("verify-button")
-                .setEmoji("<a:checkmark:1081679442595823686>")
-                .setLabel("Verify")
-                .setStyle(ButtonStyle.Success)
-        ]);
+        const row = new ActionRowBuilder().addComponents(
+            [
+                new ButtonBuilder()
+                    .setCustomId("verify-button")
+                    .setEmoji("<a:checkmark:1081679442595823686>")
+                    .setLabel("Verify")
+                    .setStyle(ButtonStyle.Success)
+            ]
+        );
 
         const embed = new EmbedBuilder()
             .setAuthor({ name: `${guild.name}'s - Verification`, iconURL: "https://i.imgur.com/6gvcooF.gif" })
