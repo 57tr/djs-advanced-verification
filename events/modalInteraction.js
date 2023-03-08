@@ -4,8 +4,8 @@ const {
     EmbedBuilder
 } = require("discord.js");
 
-const verifySchema = require("../schemas/verifySchema");
-const codesSchema = require("../schemas/codesSchema");
+const verifySchema = require("../../schemas/verifySchema");
+const codesSchema = require("../../schemas/codesSchema");
 
 module.exports = {
     name: "interactionCreate",
@@ -15,19 +15,15 @@ module.exports = {
      * @param {Interaction} interaction 
      * @returns 
      */
-
-    /**
-     * ! Check the order of how you pass parameters in your event handler
-     */
     async execute(client, interaction) {
 
         if (!interaction.isModalSubmit()) return;
-
+        
         if (!interaction.guild || !interaction.channel || !interaction.user || interaction.user.bot) return;
 
         const { fields, guild, member, customId } = interaction;
 
-        const valid = fields.getTextInputValue("captcha-code");
+        const code = fields.getTextInputValue("captcha-code");
 
         const dataVerify = await verifySchema.findOne({ guildId: guild.id });
         const dataCode = await codesSchema.findOne({ userId: member.id });
@@ -37,11 +33,11 @@ module.exports = {
                 content: "We are having trouble verifying you, please try again.",
             });
 
-            if (dataCode.captchaCode !== valid) {
+            if (dataCode.captchaCode !== code) {
                 return interaction.reply({
                     embeds: [
                         new EmbedBuilder()
-                            .setDescription(`Invalid captcha code: ${valid}`)
+                            .setDescription(`Invalid captcha code: ${code}`)
                             .setColor("Red")
                     ],
                     ephemeral: true,
