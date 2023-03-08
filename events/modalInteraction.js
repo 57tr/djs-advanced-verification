@@ -21,9 +21,9 @@ module.exports = {
      */
     async execute(client, interaction) {
 
-        if (!interaction.guild || !interaction.channel || !interaction.user || interaction.user.bot) return;
-
         if (!interaction.isModalSubmit()) return;
+
+        if (!interaction.guild || !interaction.channel || !interaction.user || interaction.user.bot) return;
 
         const { fields, guild, member, customId } = interaction;
 
@@ -33,7 +33,7 @@ module.exports = {
         const dataCode = await codesSchema.findOne({ userId: member.id });
 
         if (customId === "captcha-modal") {
-            if (!dataCode && dataCode.userId !== interaction.member.id) return interaction.reply({
+            if (!dataCode && dataCode.userId !== member.id) return interaction.reply({
                 content: "We are having trouble verifying you, please try again.",
             });
 
@@ -52,7 +52,7 @@ module.exports = {
                     { new: true, upsert: true }
                 );
 
-                interaction.member.roles.add(dataVerify.roleId);
+                member.roles.add(dataVerify.roleId);
 
                 return await interaction.reply({
                     content: `<a:checkmark:1081679442595823686> We have verified that you are not a robot. Welcome to our server have a good time.`,
