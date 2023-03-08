@@ -23,12 +23,12 @@ module.exports = {
 
         const { fields, guild, member, customId } = interaction;
 
-        const code = fields.getTextInputValue("captcha-code");
-
         const dataVerify = await verifySchema.findOne({ guildId: guild.id });
         const dataCode = await codesSchema.findOne({ userId: member.id });
 
         if (customId === "captcha-modal") {
+            const code = fields.getTextInputValue("captcha-code");
+
             if (!dataCode && dataCode.userId !== member.id) return interaction.reply({
                 content: "We are having trouble verifying you, please try again.",
             });
