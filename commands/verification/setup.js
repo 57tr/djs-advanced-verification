@@ -5,7 +5,7 @@ const {
     PermissionFlagsBits,
     ActionRowBuilder,
     ButtonBuilder,
-    ButtonStyle,
+    ButtonStyle
 } = require("discord.js");
 
 const verifySchema = require("../../schemas/verifySchema");
