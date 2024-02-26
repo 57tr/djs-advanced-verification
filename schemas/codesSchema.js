@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
 const codes = new Schema({
     userId: {
@@ -8,6 +8,6 @@ const codes = new Schema({
     captchaCode: {
         type: String
     }
-})
+});
 
-module.exports = model("codesSchema", codes)
+module.exports = model('codesSchema', codes);

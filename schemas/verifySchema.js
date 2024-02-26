@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
 const verify = new Schema({
     guildId: {
@@ -8,6 +8,6 @@ const verify = new Schema({
     roleId: {
         type: String
     }
-})
+});
 
-module.exports = model("verifySchema", verify)
+module.exports = model('verifySchema', verify);
