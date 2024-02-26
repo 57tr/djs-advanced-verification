@@ -7,9 +7,9 @@ This is an advanced verification system with a database for different guilds, it
 <a href="https://github.com/57tr"><img src="https://img.shields.io/github/followers/57tr?style=for-the-badge"/></a>
 
 ## Dependencies:
-> The dependencies used are [mongoose](https://www.npmjs.com/package/mongoose) and [captcha-canvas](https://www.npmjs.com/package/captcha-canvas).
+> The dependencies used are [discord.js](https://discord.js.org/#/), [mongoose](https://www.npmjs.com/package/mongoose) and [captcha-canvas](https://www.npmjs.com/package/captcha-canvas).
 ```
-npm i mongoose captcha-canvas
+npm i discord.js mongoose captcha-canvas
 ```
 
 # Instructions:
