@@ -1,0 +1,16 @@
+{
+  "name": "djs-advanced-verification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "captcha-canvas": "^3.2.1",
+    "discord.js": "^14.12.1",
+    "mongoose": "^7.0.1"
+  }
+}
