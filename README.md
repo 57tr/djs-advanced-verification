@@ -33,7 +33,7 @@ await connect(MONGO_URI).then(() => {
 ```
 
 # Preview
-https://github.com/57tr/djs-advanced-verification/assets/96021196/ffbb3ae2-552d-4ede-b28a-3f1dcb94cbc1
+https://github.com/57tr/djs-advanced-verification/assets/96021196/9e2cda2a-a529-4c90-a2b1-1801d954409a
 
 # Contributing:
 > If you want to contribute create a fork of this project and when you are done editing it update the fork and create a pull request.
