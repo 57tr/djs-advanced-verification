@@ -1,4 +1,4 @@
-![DBT Image](https://cdn.discordapp.com/attachments/1082534981961781258/1082540823058579526/djs-advanced-verification.jpg)
+![DBT Image](https://github.com/57tr/djs-advanced-verification/assets/96021196/a0ef7149-3b85-43ab-a816-2f9a60595ea1)
 
 # djs-advanced-verification
 This is an advanced verification system with a database for different guilds, it is easy to use and adapt. You can prevent raids on your discord and bot injections.
