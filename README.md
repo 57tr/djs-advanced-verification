@@ -26,9 +26,9 @@ const { connect } = require("mongoose");
 
 // Add this to your ready.js or index.js file
 await connect(MONGO_URI).then(() => {
-    console.log(`Successfully connected to MongoDB!`);
+    console.log('Successfully connected to MongoDB!');
 }).catch((error) => {
-    console.log(`Error connecting to MongoDB!`, error);
+    console.log('Error connecting to MongoDB!', error);
 });
 ```
 
