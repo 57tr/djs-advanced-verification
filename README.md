@@ -8,7 +8,7 @@ This is an advanced verification system with a database for different guilds, it
 
 ## Dependencies:
 > The dependencies used are [discord.js](https://discord.js.org/#/), [mongoose](https://www.npmjs.com/package/mongoose) and [captcha-canvas](https://www.npmjs.com/package/captcha-canvas).
-```
+```bash
 npm i discord.js mongoose captcha-canvas
 ```
 
